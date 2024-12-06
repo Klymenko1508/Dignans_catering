@@ -1,0 +1,131 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Navigation Bar */
+  .header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .logo-container img {
+    width: 150px;
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .nav-links a {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover {
+    color: #555;
+  }
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('images/table_set.jpg') no-repeat center center/cover;
+    color: white;
+  }
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  
+  /* Company Info Section */
+  .company-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+  }
+  .info-container {
+    max-width: 800px;
+    text-align: center;
+  }
+  .info-container img {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+  .info-container p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .footer-content {
+    margin-bottom: 20px;
+  }
+  .footer-content p {
+    margin-bottom: 10px;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .social-links a {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s;
+  }
+  .social-links a:hover {
+    color: #bbb;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #f8f8f8;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+    .nav-links a {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+  
