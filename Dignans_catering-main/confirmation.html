@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirmation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dignans.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="header-navigation">
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <a href="index.html"><img src="images/Dignans.png" alt="Dignans Logo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/company.html">Company</a></li>
+                <li><a href="/about.html">Services</a></li>
+                <li><a href="/cafe.html">Cafe / Menu</a></li>
+                <li><a href="/contacts.html">Contacts</a></li>
+            </ul>
+            <!-- Mobile Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Main Content Confirmaton-->
+     <div class="confirmation">
+    <div class="thank-you-container">
+        <h1>Thank you for your order, <span id="customer-name">Guest</span>!</h1>
+        <p>We will contact you shortly to confirm the details.</p>
+        <a href="index.html" class="home-button">Back to Home</a>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/company.html">Company</a></li>
+                <li><a href="/cafe.html">Cafe/Menu</a></li>
+                <li><a href="/contacts.html">Contacts</a></li>
+                <li><a href="/order.html">Order</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <p><i class="fa-solid fa-location-dot"></i>
+            <a href="https://www.google.com/maps/search/?q=50+Prospecthill+Rd,+Glasgow+G42+9LB" target="_blank"> 50 Prospecthill Rd, Glasgow G42 9LB</a></p>
+            <p><i class="fa-regular fa-envelope"></i>
+            <a href="mailto:catering@dignans.com.uk">catering@dignans.com.uk</a></p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:0123456789">0123456789</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <br>
+            <p>&copy; Dignans Catering, 2024</p>
+    </footer>
+    <script>
+        // Получаем имя из URL (например, thank-you.html?name=John)
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name') || 'Guest';
+        document.getElementById('customer-name').textContent = name;
+    </script>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <script src="js/catering.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Get in touch with Dignans Catering for all your event planning and catering needs. Reach out via phone, email, or visit us at our location in Glasgow." />
+    <meta name="keywords"
+        content="contact Dignans Catering, event catering, catering services Glasgow, catering inquiry, get in touch Dignans, catering phone, catering email" />
+    <meta name="author" content="Dignans Catering" />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Contact Dignans Catering" />
+    <meta property="og:description"
+        content="Get in touch with Dignans Catering for all your event planning and catering needs. Reach out via phone, email, or visit us at our location in Glasgow." />
+    <meta property="og:image" content="images/Dignans.png" />
+    <meta property="og:url" content="https://www.dignans.com/contacts.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="Contact Dignans Catering" />
+    <meta name="twitter:description"
+        content="Get in touch with Dignans Catering for all your event planning and catering needs. Reach out via phone, email, or visit us at our location in Glasgow." />
+    <meta name="twitter:image" content="images/Dignans.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>Contacts | Dignans Catering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dignans.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="header-navigation">
+            <!-- Logo Section -->
+            <div class="logo-container">
+                <a href="index.html"><img src="images/Dignans.png" alt="Dignans Logo"></a>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/company.html">Company</a></li>
+                <li><a href="/cafe.html">Cafe / Menu</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="/order.html">Order</a></li>
+            </ul>
+            <!-- Mobile Hamburger -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="contact-section">
+            <h1>Contacts</h1>
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <p><i class="fa-regular fa-envelope"></i> catering@dignans.com.uk</p>
+                    <p><i class="fa-solid fa-location-dot"></i> 50 Prospecthill Rd, Glasgow G42 9LB</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.9116153210724!2d-4.257267384215241!3d55.82543278058252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846a3f9b1ab39%3A0x5bf3d7c3e4793721!2s50%20Prospecthill%20Rd%2C%20Glasgow%20G42%209LB%2C%20UK!5e0!3m2!1sen!2suk!4v1616161616161"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+    </div>
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <h2>Let’s Plan Your Next Big Event Together</h2>
+                    <h3>Get in touch!</h3>
+                    <form action="confirmationContacts.html" method="get">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                        <label for="telephone">Telephone</label>
+                        <input type="tel" id="telephone" name="telephone" placeholder="Your Telephone" required>
+    
+                        <button type="submit">Send</button>
+                    </form>
+                
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-nav">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/company.html">Company</a></li>
+                <li><a href="/cafe.html">Cafe/Menu</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="/order.html">Order</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <p><i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps/search/?q=50+Prospecthill+Rd,+Glasgow+G42+9LB" target="_blank"> 50 Prospecthill Rd, Glasgow G42 9LB</a></p>
+            <p> <i class="fa-regular fa-envelope"></i> <a href="mailto:catering@dignans.com.uk">catering@dignans.com.uk</a> </p>
+            <p><i class="fa-solid fa-phone"></i> <a href="tel:0123456789">0123456789</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <br>
+            <p>&copy; Dignans Catering, 2024</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('show');
+        }
+    </script>
+    <script src="js/catering.js"></script>
+</body>
+
+</html>
